@@ -1,9 +1,11 @@
 package com.example.contactactivity
 
 data class contactList(
-    var tvname:String,
-    var tvEmail:String,
-    var tvPhonenumber:String,
-    var address:String
+    var name:String,
+    var email:String,
+    var Phonenumber:String,
+    var address:String,
+    var image: String,
+
 )
 

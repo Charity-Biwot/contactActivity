@@ -6,7 +6,7 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.example.contactactivity.databinding.ContactListBinding
 
-class ContactRvAdapter(var contactList:List<Contact>):
+class ContactRvAdapter(var contactList:List<contactList>):
     RecyclerView.Adapter<ContactRvAdapter.ContactViewHolder>() {
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ContactViewHolder {
         var binding =
@@ -20,10 +20,10 @@ class ContactRvAdapter(var contactList:List<Contact>):
         var currentContact = contactList.get(position)
         val context = holder.itemView.context
         with(holder.binding) {
-            tvName.text = currentContact.Name
-            tvEmail.text = currentContact.Email
-            tvAddress.text = currentContact.Address
-            tvNumber.text = currentContact.Number
+            tvName.text = currentContact.name
+            tvEmail.text = currentContact.email
+            tvAddress.text = currentContact.address
+            tvNumber.text = currentContact.Phonenumber
             Picasso.get()
                 .load(currentContact.Person)
 //                .resize(300,300)
